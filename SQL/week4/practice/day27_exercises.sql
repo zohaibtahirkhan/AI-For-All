@@ -1,0 +1,15 @@
+-- ============================================================
+-- day27_exercises.sql
+-- ============================================================
+
+-- Day 27: Geospatial SQL
+-- Q1. Enable PostGIS. Add a centroid GEOMETRY column to taxi_zones.
+--     Manually set coordinates for at least 5 zones (JFK, LGA, Penn Station, Times Square, etc.)
+-- Q2. Calculate the straight-line distance in km between JFK Airport and each other zone
+--     that has a centroid defined.
+-- Q3. Find the 3 zones closest to Midtown Manhattan (approx: -73.985, 40.758).
+-- Q4. Count pickup trips per zone and return results with ST_AsGeoJSON for the centroid.
+--     This is the "heatmap data" format.
+-- Q5. CHALLENGE: Compute the estimated "as-the-crow-flies" distance for each trip
+--     using the zone centroids. Compare to actual trip_distance.
+--     Flag trips where actual distance is less than straight-line distance (data error!).

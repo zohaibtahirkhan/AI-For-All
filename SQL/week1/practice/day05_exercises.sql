@@ -1,0 +1,15 @@
+-- ============================================================
+-- Day 05 Exercises
+-- ============================================================
+-- Write your queries below each question.
+-- Check solutions/ only after attempting all questions.
+-- ============================================================
+
+-- Q1. Format pickup_datetime as 'Monday, January 15 2023' for all trips. Show 10 rows.
+-- Q2. Find the average trip duration in minutes. Filter out trips > 3 hours (likely errors).
+-- Q3. Show trips per hour of day and per day of week in a single query (two separate GROUP BYs using UNION ALL).
+-- Q4. Classify trips as AM Rush / PM Rush / Late Night / Off-Peak. Count and avg fare per category.
+-- Q5. Find all trips on weekends. How does avg fare compare to weekdays?
+-- Q6. Show trip_id, pickup zone, dropoff zone — but shorten zone names over 20 chars to first 17 + '...'.
+-- Q7. Calculate days between pickup_datetime and NOW() for each trip (data age check).
+-- Q8. CHALLENGE: For each month (if multiple), show the day with highest trips and the day with highest revenue.

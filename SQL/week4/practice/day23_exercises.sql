@@ -1,0 +1,21 @@
+-- ============================================================
+-- day23_exercises.sql
+-- ============================================================
+
+-- Day 23: Spark SQL
+-- These exercises are written as SQL (run via spark.sql() in PySpark)
+-- Q1. Register the yellow_taxi parquet file as a temp view and run a basic aggregation.
+-- Q2. Write a CREATE TABLE statement with USING PARQUET and PARTITIONED BY pickup_month.
+-- Q3. Write a Delta Lake MERGE INTO statement for incremental load of daily trip data.
+-- Q4. Compare Spark SQL syntax vs PostgreSQL for these operations:
+--     - DATE_TRUNC (month level)
+--     - Extract day of week
+--     - String split on '/'
+--     Write both versions.
+-- Q5. Write a Spark SQL query that uses collect_list and explode.
+-- Q6. CHALLENGE: Design a full Spark SQL ELT pipeline:
+--     a) Read raw parquet into staging view
+--     b) Apply data quality filters
+--     c) Enrich with zone lookup
+--     d) Write to Delta partitioned by trip date
+--     e) MERGE incremental updates

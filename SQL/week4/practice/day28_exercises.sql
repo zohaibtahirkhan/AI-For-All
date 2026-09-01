@@ -1,0 +1,23 @@
+-- ============================================================
+-- day28_exercises.sql
+-- ============================================================
+
+-- Day 28: SQL for ML Features
+-- Q1. Build a base feature table for predicting fare_amount:
+--     - pickup_hour, pickup_dow, is_weekend
+--     - trip_distance, passenger_count, rate_code_id
+--     - same_borough (1/0)
+-- Q2. Add zone-level historical features (zone_avg_fare, zone_trip_count).
+--     Ensure you're not using future data (compute from full historical set).
+-- Q3. Implement a rolling window feature: for each trip, compute the average
+--     fare in the same zone for the 100 trips immediately prior.
+--     (Use LAG or window with ROWS BETWEEN ... PRECEDING)
+-- Q4. One-hot encode payment_type into separate boolean columns.
+-- Q5. Split the feature table into train (80%) and test (20%) sets
+--     using a deterministic method (e.g., MOD(trip_id, 10) >= 8 for test).
+-- Q6. CHALLENGE: Build a complete feature store table:
+--     - All features from Q1-Q4
+--     - Point-in-time safe window features
+--     - No data leakage
+--     - Proper train/test split flag
+--     - Export statistics: mean, stddev, min, max per feature column

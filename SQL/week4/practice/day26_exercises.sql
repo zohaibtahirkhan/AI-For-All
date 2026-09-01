@@ -1,0 +1,15 @@
+-- ============================================================
+-- day26_exercises.sql
+-- ============================================================
+
+-- Day 26: JSON & Semi-Structured Data
+-- Q1. Create a trip_metadata table with JSONB column. Insert 5 rows with varied metadata.
+-- Q2. Query the JSONB column to extract: source, surge multiplier, first tag.
+-- Q3. Use jsonb_array_elements_text to expand the tags array into individual rows.
+-- Q4. Filter trips where metadata contains the tag 'airport'.
+-- Q5. Create a GIN index on the JSONB column. Use EXPLAIN to show it's being used.
+-- Q6. Build a JSON summary per zone using jsonb_build_object and jsonb_agg.
+-- Q7. CHALLENGE: Simulate a semi-structured log pipeline:
+--     - Create a raw_logs table with a JSONB event_data column
+--     - Insert 10 varied log events (trip_started, payment_processed, trip_completed)
+--     - Write a query that extracts events by type and computes event-specific metrics

@@ -1,0 +1,21 @@
+-- ============================================================
+-- day24_exercises.sql
+-- ============================================================
+
+-- Day 24: dbt Patterns
+-- These exercises show the SQL patterns dbt generates. Write them in plain SQL.
+-- Q1. Write a "staging model" SQL — select + rename + basic filter for yellow_taxi_trips.
+--     Add _source and _loaded_at metadata columns.
+-- Q2. Write an "intermediate model" — join staging trips to zone lookup. Use LEFT JOIN.
+-- Q3. Write an "incremental model" SQL:
+--     - Full logic when running fresh
+--     - Lookback-window filter for incremental runs
+--     - UPSERT with ON CONFLICT
+-- Q4. Implement a dbt-style "test" as a SQL query: write a query that returns rows
+--     only when there are fare_amount values outside [0, 1000]. 
+--     Zero rows = test passes. Any rows = test fails.
+-- Q5. Write a macro-equivalent: a SQL function that takes a column name and returns
+--     the classified fare tier. Use it in a GROUP BY query.
+-- Q6. CHALLENGE: Design a 3-model dbt project in pure SQL:
+--     stg_trips → int_trips_enriched → fct_daily_revenue
+--     Make fct_daily_revenue incrementally loadable using watermark + UPSERT.

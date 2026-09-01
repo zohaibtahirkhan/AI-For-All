@@ -1,0 +1,18 @@
+-- ============================================================
+-- day22_exercises.sql
+-- ============================================================
+
+-- Day 22: BigQuery SQL
+-- Use the public dataset: bigquery-public-data.new_york_taxi_trips.tlc_yellow_trips_2022
+-- Q1. Create a partitioned table from the public dataset. Run a query with a partition filter
+--     and use EXPLAIN to verify only one partition is scanned.
+-- Q2. Use ARRAY_AGG to collect the top 5 fare amounts per pickup zone into an array.
+-- Q3. UNNEST the array from Q2 to get individual rows back.
+-- Q4. Use APPROX_COUNT_DISTINCT vs COUNT(DISTINCT) — compare results and speed.
+-- Q5. Rewrite this PostgreSQL query for BigQuery (fix syntax differences):
+--     SELECT DATE_TRUNC('month', pickup_datetime), EXTRACT(DOW FROM pickup_datetime), COUNT(*)
+--     FROM yellow_taxi_trips GROUP BY 1, 2
+-- Q6. CHALLENGE: Build a full analytics query using BigQuery-specific features:
+--     - Partition filter on pickup date
+--     - ARRAY_AGG of payment types per zone
+--     - APPROX_QUANTILES for fare percentiles

@@ -1,0 +1,31 @@
+# Data files (too large for git)
+*.parquet
+*.csv
+*.tsv
+*.gz
+*.zip
+
+# Database dumps
+*.sql.gz
+*.dump
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# DuckDB
+*.duckdb
+*.duckdb.wal

@@ -1,0 +1,21 @@
+-- ============================================================
+-- Day 06 Exercises
+-- ============================================================
+-- Write your queries below each question.
+-- Check solutions/ only after attempting all questions.
+-- ============================================================
+
+-- Q1. Show how many rows have NULL for each of: passenger_count, tip_amount, congestion_surcharge.
+-- Q2. Replace NULL tip_amount with 0 and NULL passenger_count with 1. Show before/after counts.
+-- Q3. Classify fares using CASE WHEN: 'Short' (<$8), 'Medium' ($8–$25), 'Long' ($25–$60), 'Premium' (>$60).
+--     Show count and avg tip for each category.
+-- Q4. Calculate tip percentage safely (tip/fare*100). Handle fare=0 and NULL tip using NULLIF and COALESCE.
+-- Q5. Find trips where passenger_count IS NULL OR passenger_count = 0. These are data quality issues.
+-- Q6. Show payment_type as human-readable using CASE WHEN. Group and count by this label.
+-- Q7. CHALLENGE: Build a data quality scorecard — for each trip, compute a quality score from 0-5:
+--     +1 if passenger_count is not null and > 0
+--     +1 if trip_distance > 0
+--     +1 if fare_amount > 0
+--     +1 if pickup_datetime < dropoff_datetime
+--     +1 if pickup_location_id IS NOT NULL and dropoff_location_id IS NOT NULL
+--     Show distribution of quality scores (how many trips score 0,1,2,3,4,5).

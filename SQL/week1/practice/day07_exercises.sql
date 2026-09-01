@@ -1,0 +1,20 @@
+-- ============================================================
+-- Day 07 Exercises
+-- ============================================================
+-- Write your queries below each question.
+-- Check solutions/ only after attempting all questions.
+-- ============================================================
+
+-- Q1. Use UNION ALL to combine yellow and green taxi trips into one result. 
+--     Add a 'taxi_type' column. Show date, taxi_type, trip_count. Requires green_taxi_trips table.
+-- Q2. Find pickup location IDs that appear in BOTH yellow and green taxi data (INTERSECT).
+-- Q3. Find location IDs in taxi_zones that are NEVER used as a pickup in yellow_taxi_trips (EXCEPT).
+-- Q4. Using UNION ALL, create a combined dataset and compute revenue per taxi type per day.
+-- Q5. Reconciliation: Find any trip_ids that would be duplicated if you UNION ALL yellow and green
+--     (since they use separate SERIAL sequences, there shouldn't be any, but verify!).
+-- Q6. CHALLENGE: Build a full coverage report — for each taxi zone, show:
+--     - yellow_pickups count
+--     - green_pickups count  
+--     - total_pickups
+--     Include zones with 0 pickups in either category.
+--     (Combine FULL OUTER JOIN or UNION ALL approaches)

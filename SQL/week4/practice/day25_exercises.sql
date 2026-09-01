@@ -1,0 +1,19 @@
+-- ============================================================
+-- day25_exercises.sql
+-- ============================================================
+
+-- Day 25: Recursive CTEs
+-- Q1. Generate all dates in January 2023 using a recursive CTE.
+--     LEFT JOIN to yellow_taxi_trips to show days with 0 trips (if any).
+-- Q2. Generate integers 1–168 (hours in a week). Join to hourly trip data.
+-- Q3. Build a "trip chain" analysis: starting from zone 132 (JFK Airport),
+--     find all zones reachable within 1 direct trip.
+--     Then find zones reachable in 2 trips. How does the set grow?
+-- Q4. Use generate_series() (PostgreSQL built-in) to generate:
+--     a) All hours in a day (0-23)
+--     b) All Mondays in January 2023
+--     c) All zone_id values from 1 to 265
+-- Q5. CHALLENGE: Implement the "gaps and islands" problem:
+--     Find "active streaks" — consecutive days where a zone had > 100 trips.
+--     Show: zone_id, streak_start, streak_end, streak_length_days
+--     Hint: activity_date - ROW_NUMBER() creates a grouping key for consecutive dates.
